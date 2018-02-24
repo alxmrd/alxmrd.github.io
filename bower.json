@@ -1,10 +1,10 @@
 {
-  "name": "teomrd.github.io",
-  "homepage": "teomrd.github.io",
+  "name": "alexmrd.github.io",
+  "homepage": "alexmrd.github.io",
   "authors": [
-    "Mironidis Theodoros <teomrd@hotmail.com>"
+    "Mironidis Alexandros <mironidis1@gmail.com>"
   ],
-  "description": "Mironidis Theodoros CV",
+  "description": "Mironidis Alexndros CV",
   "main": "index.html",
   "keywords": [
     "Mironidis"
