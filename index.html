@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="assets/css/print.css" media="print" rel="stylesheet" />
+    <link href="assets/css/print1.css" media="print" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
@@ -211,16 +211,7 @@
               <div class="what">
                 Painting
 
-                <ul>
-                  <li>Tattooing</li>
-
-                  <li>Wall Paintings</li>
-
-                  <li>Paintings on Skate Deck Board</li>
-
-                  <li>Painting on Clothes</li>
-                </ul>
-
+              
                 <div class="item">
                   <div class="what">
                     Extreme Sports
@@ -351,6 +342,9 @@
                 Terminal
               </li>
               <li>
+                Postman
+              </li>
+              <li>
                 Adobe Photoshop
               </li>
               <li>
@@ -385,10 +379,21 @@
 <!-- Load Pako ZLIB library to enable PDF compression -->
 <script src="assets/js/index.js"></script>
 <script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js");
-    });
+  if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+  navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+  // Registration was successful
+  console.log('Registered!');
+  }, function(err) {
+  // registration failed :(
+  console.log('ServiceWorker registration failed: ', err);
+  }).catch(function(err) {
+  console.log(err);
+  });
+  });
+  } else {
+  console.log('service worker is not supported');
   }
-</script>
+  </script>
+
 </html>
