@@ -13,6 +13,7 @@ html, body {
 /****** responsive with flex *********/
 
 .wrapper {
+  background: #2c2c2c;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
