@@ -13,34 +13,35 @@
         background: #f7f9fc;
         color: #333;
         margin: 0;
-        padding: 40px 20px;
+        padding: 20px;
       }
 
       .container {
         max-width: 900px;
         margin: auto;
         background: #fff;
-        padding: 40px;
-        border-radius: 12px;
+        padding: 20px;
+        border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       }
 
       h1 {
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 5px;
       }
 
       h2 {
-        font-size: 22px;
-        margin-top: 40px;
+        font-size: 18px;
+        margin-top: 20px;
         border-bottom: 1px solid #ccc;
-        padding-bottom: 6px;
+        padding-bottom: 2px;
+        margin-bottom: 5px;
       }
 
       .contact span {
         display: block;
-        margin-bottom: 4px;
-        font-size: 14px;
+        margin-bottom: 1px;
+        font-size: 12px;
       }
 
       a {
@@ -49,64 +50,66 @@
       }
 
       .section {
-        margin-top: 30px;
+        margin-top: 15px;
       }
 
       .job {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-top: 15px;
+        margin-top: 10px;
       }
 
       .job-title {
         font-weight: bold;
+        font-size: 14px;
       }
 
       .job-date {
         font-style: italic;
-        font-size: 13px;
+        font-size: 12px;
         color: #555;
       }
 
       ul {
-        margin-top: 8px;
-        padding-left: 20px;
+        margin-top: 6px;
+        padding-left: 15px;
       }
 
       ul li {
-        margin-bottom: 6px;
-        font-size: 14px;
+        margin-bottom: 4px;
+        font-size: 12px;
       }
 
       p {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 12px;
+        line-height: 1.4;
+        margin-top: 0px;
       }
 
       .small {
-        font-size: 13px;
+        font-size: 12px;
         color: #555;
       }
 
       hr {
         border: none;
         border-top: 1px solid #ddd;
-        margin: 40px 0;
+        margin: 20px 0;
       }
 
       /* PDF Button */
       #download-btn {
         position: fixed;
-        bottom: 30px;
-        right: 30px;
-        padding: 10px 20px;
-        font-size: 14px;
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 16px;
+        font-size: 12px;
         font-weight: 500;
         color: #007dd1;
         background: rgba(255, 255, 255, 0.15);
         border: 1px solid rgba(0, 122, 204, 0.25);
-        border-radius: 16px;
+        border-radius: 12px;
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -120,6 +123,7 @@
         color: #005fa3;
         border-color: rgba(0, 122, 204, 0.35);
       }
+
       @media print {
         #download-btn {
           display: none !important;
@@ -229,7 +233,7 @@
           <span class="job-title"
             >Frontend Engineer – Senior Associate | Pfizer Digital</span
           >
-          <span class="job-date">Jun 2022 – Feb 2023</span>
+          <span class="job-date">Apr 2022 – Feb 2023</span>
         </div>
         <p>
           <strong>Tech Stack:</strong> TypeScript, StencilJS, Jest, Storybook,
@@ -248,7 +252,7 @@
           <span class="job-title"
             >Frontend Engineer – Associate | Pfizer Digital</span
           >
-          <span class="job-date">Jun 2021 – Jun 2022</span>
+          <span class="job-date">Jun 2020 – Mar 2022</span>
         </div>
         <p>
           <strong>Tech Stack:</strong> TypeScript, StencilJS, Jest, Storybook,
@@ -288,7 +292,7 @@
           <li>
             Electrical & Computer Engineering, University of Western Macedonia
           </li>
-          <li>Advanced Applications in Informatics and Telecommunications</li>
+
           <li>C2 Proficiency in English, Michigan State University</li>
         </ul>
       </div>
@@ -297,19 +301,24 @@
     <button id="download-btn" onclick="generatePDF()" title="Download PDF">
       Download PDF
     </button>
-
     <script>
       function generatePDF() {
         const element = document.querySelector(".container");
         html2pdf()
           .set({
-            margin: 0.5,
+            margin: [0, 0, 0, 0],
             filename: "Mironidis_Alexandros_CV.pdf",
             image: { type: "jpeg", quality: 0.98 },
-            html2canvas: { scale: 2 },
+            html2canvas: { scale: 2, scrollY: 0 },
             jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
           })
           .from(element)
+          .toPdf()
+          .get("pdf")
+          .then((pdf) => {
+            pdf.setPage(1);
+            pdf.setFontSize(10);
+          })
           .save();
       }
     </script>
