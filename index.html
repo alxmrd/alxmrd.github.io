@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mironidis Alexandros - Frontend Developer Resume</title>
+    <meta
+      name="description"
+      content="Alexandros Mironidis — Product experience, frontend engineering, and AI-assisted design-to-code workflows."
+    />
+    <title>
+      Alexandros Mironidis - AI Experience Design & Frontend Engineering
+    </title>
 
     <style>
       * {
@@ -71,14 +77,14 @@
       }
 
       .section {
-        margin-top: 15px;
+        margin-top: 24px;
       }
 
       .job {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-top: 10px;
+        margin-top: 4px;
       }
 
       .job-title {
@@ -92,6 +98,15 @@
         color: #555;
       }
 
+      .company {
+        font-size: 18px;
+        margin: 18px 0 0;
+      }
+
+      .company:first-of-type {
+        margin-top: 10px;
+      }
+
       ul {
         margin: 0 0 10px;
         padding-left: 15px;
@@ -99,12 +114,13 @@
 
       ul li {
         margin-bottom: 4px;
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.45;
       }
 
       p {
-        font-size: 13px;
-        line-height: 1.4;
+        font-size: 14px;
+        line-height: 1.45;
         margin: 0 0 7px;
       }
 
@@ -114,7 +130,7 @@
       }
 
       .subheading {
-        margin-bottom: 3px;
+        margin: 8px 0 3px;
       }
 
       .role {
@@ -127,7 +143,6 @@
         color: #555;
       }
 
-      /* PDF Button */
       #download-btn {
         position: fixed;
         bottom: 20px;
@@ -136,7 +151,7 @@
         font-size: 12px;
         font-weight: 500;
         color: #007dd1;
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(0, 122, 204, 0.25);
         border-radius: 12px;
         backdrop-filter: blur(6px);
@@ -177,10 +192,12 @@
 
         h2 {
           margin: 14px 0 4px;
+          break-after: avoid;
+          page-break-after: avoid;
         }
 
         .section {
-          margin-top: 10px;
+          margin-top: 14px;
         }
 
         .header {
@@ -191,7 +208,18 @@
           margin-top: 7px;
         }
 
+        .company {
+          margin-top: 12px;
+        }
+
+        .company--page-break {
+          break-before: page;
+          page-break-before: always;
+        }
+
         p {
+          font-size: 13px;
+          line-height: 1.4;
           margin-bottom: 4px;
         }
 
@@ -200,6 +228,8 @@
         }
 
         ul li {
+          font-size: 13px;
+          line-height: 1.4;
           margin-bottom: 2px;
         }
 
@@ -209,6 +239,11 @@
 
         a {
           color: inherit;
+        }
+
+        * {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
         }
       }
 
@@ -234,12 +269,15 @@
       }
     </style>
   </head>
+
   <body>
-    <div class="container">
+    <main class="container">
       <header class="header">
-        <h1>Mironidis Alexandros</h1>
+        <h1>Alexandros Mironidis</h1>
+
         <div class="contact small">
-          <span>Mid-Senior Frontend Developer</span>
+          <span>Frontend Engineering | Product Experience Design </span>
+
           <span>
             <a
               href="https://www.linkedin.com/in/alexandros-mironidis/"
@@ -255,135 +293,217 @@
               >GitHub</a
             >
           </span>
-          <span><a href="tel:+306987326516">+30 6987 326 516</a></span>
-          <span
-            ><a href="mailto:mironidis1@gmail.com"
-              >mironidis1@gmail.com</a
-            ></span
-          >
+
+          <span>
+            <a href="tel:+306987326516">+30 6987 326 516</a>
+          </span>
+
+          <span>
+            <a href="mailto:mironidis1@gmail.com">mironidis1@gmail.com</a>
+          </span>
+
           <span>Thessaloniki, Greece</span>
         </div>
       </header>
 
-      <div class="section">
+      <section class="section">
         <h2>Professional Summary</h2>
         <p>
-          Frontend Developer with 6+ years of experience building reliable,
-          easy-to-use web applications with Vue.js, TypeScript, and StencilJS
-          for healthcare and gaming products across global markets.
+          Frontend Engineer with 6+ years of experience building digital
+          products in healthcare and gaming. I contribute from research and UX
+          exploration through design, architecture, and implementation. I also
+          research competitors, suggest UX improvements, and use LLM-assisted
+          workflows to connect Figma designs with frontend code.
         </p>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Technical Skills</h2>
-        <p>
-          <strong>Frontend:</strong> Vue.js, TypeScript, JavaScript, StencilJS,
-          React, React Native, Tailwind CSS, Storybook
-        </p>
-        <p>
-          <strong>State, Testing &amp; Delivery:</strong> Pinia, Redux, Jest,
-          Unit Testing, CI/CD, Design Systems
-        </p>
-        <p>
-          <strong>Developer Tooling:</strong> Figma, AI-assisted code review,
-          design QA, Git
-        </p>
-      </div>
 
-      <div class="section">
+        <p>
+          <strong>Product &amp; Experience:</strong>
+          Competitor Research, UX Opportunity Analysis, Experience Design,
+          Requirements Discovery, Cross-functional Collaboration
+        </p>
+
+        <p>
+          <strong>Design Systems &amp; Quality:</strong>
+          Figma, Reusable Components, Interaction Patterns, Accessibility,
+          Design-System Alignment, Design QA
+        </p>
+
+        <p>
+          <strong>Frontend &amp; Architecture:</strong>
+          Vue.js, TypeScript, JavaScript, StencilJS, React, React Native,
+          Tailwind CSS, Storybook, APIs, Pinia, Redux
+        </p>
+
+        <p>
+          <strong>Testing &amp; AI Tooling:</strong>
+          Jest, Vitest, Unit Testing, CI/CD, LLM-assisted workflows, Custom AI
+          skills, Git
+        </p>
+      </section>
+
+      <section class="section">
         <h2>Professional Experience</h2>
 
+        <h3 class="company">Kaizen Gaming</h3>
         <article class="role">
           <div class="job">
-            <span class="job-title">Frontend Developer | Kaizen Gaming</span>
+            <span class="job-title">Frontend Developer</span>
             <span class="job-date">July 2024 – Present</span>
           </div>
+
           <p class="stack">
-            <strong>Tech Stack:</strong> Vue.js, Tailwind CSS, Pinia, Unit
-            Testing
+            <strong>Tech Stack:</strong>
+            Vue.js, TypeScript, Tailwind CSS, Pinia, Vitest
           </p>
+
+          <p class="subheading">
+            <strong
+              >Notification Center — Product Experience, Architecture &amp;
+              Implementation</strong
+            >
+          </p>
+
           <ul>
             <li>
-              Build frontend features for a social product that connects
-              Stoiximan and Betano users with players.
+              Contribute from experience design and solution exploration through
+              frontend architecture, implementation, and integration for the
+              Notification Center.
             </li>
-            <li>Launched an MVP under tight deadlines.</li>
-            <li>Released the product in Peru and Bulgaria.</li>
-            <li>Build UI features based on user data and product KPIs.</li>
             <li>
-              Manage application state with Pinia and maintain unit tests.
+              Work with Product, Design, and Backend Engineering to define
+              interaction behavior, component responsibilities, data flows, and
+              integration requirements.
+            </li>
+            <li>
+              Build reusable Vue.js components and interaction patterns for
+              notification lists, cards, filters, action buttons, badges, and
+              notification details.
+            </li>
+            <li>
+              Investigate integration issues and edge cases, proposing solutions
+              that improve reliability, maintainability, and consistency across
+              notification experiences.
             </li>
           </ul>
-          <p class="subheading"><strong>AI Improvements:</strong></p>
+
+          <p class="subheading">
+            <strong>Social Product — End-to-End Product Development</strong>
+          </p>
+
           <ul>
             <li>
-              Create AI skills to review pull requests and check Figma
-              designs against the implementation.
+              Contribute across the product lifecycle, from requirements
+              discovery and UX exploration through frontend architecture,
+              implementation, testing, and release.
             </li>
             <li>
-              Use these workflows to find code and UI issues earlier.
+              Research competitor experiences and identify UX patterns, gaps,
+              and improvement opportunities; translate findings into practical
+              recommendations and product solutions.
+            </li>
+            <li>
+              Partner with Product, Design, and Engineering to translate user
+              needs and business objectives into usable experiences while
+              balancing design intent and technical constraints.
+            </li>
+            <li>
+              Helped deliver the MVP under tight deadlines and supported its
+              expansion into Peru and Bulgaria.
+            </li>
+          </ul>
+
+          <p class="subheading">
+            <strong>AI-Assisted Design &amp; Engineering</strong>
+          </p>
+
+          <ul>
+            <li>
+              Develop custom AI skills using LLMs to connect Figma
+              specifications with frontend code, supporting Figma as the single
+              source of truth for design-system alignment and implementation
+              consistency.
+            </li>
+            <li>
+              Use LLM-assisted workflows to review pull requests and compare
+              Figma designs with implemented interfaces, helping identify code
+              and UI discrepancies earlier.
             </li>
           </ul>
         </article>
 
+        <h3 class="company company--page-break">Pfizer Digital</h3>
         <article class="role">
           <div class="job">
-            <span class="job-title"
-              >Frontend Engineer – Manager | Pfizer Digital</span
-            >
+            <span class="job-title">Frontend Engineer – Manager</span>
             <span class="job-date">March 2023 – June 2024</span>
           </div>
+
           <p class="stack">
-            <strong>Tech Stack:</strong> JavaScript, Vue.js, StencilJS,
-            Storybook
+            <strong>Tech Stack:</strong>
+            JavaScript, Vue.js, StencilJS, Storybook
           </p>
+
           <ul>
             <li>
-              Led frontend development for a healthcare transformation pilot.
+              Worked across requirements, solution exploration, and
+              implementation with design, product, and engineering stakeholders
+              to deliver healthcare digital experiences.
             </li>
             <li>
-              Designed a scalable frontend structure and integrated design
-              systems.
+              Led frontend development for the Pods pilot initiative, supporting
+              technology-driven healthcare experiences.
             </li>
             <li>
-              Turned design-system patterns into reusable frontend components.
+              Developed scalable frontend architecture and reusable components
+              aligned with Pfizer's design system and brand guidelines.
+            </li>
+            <li>
+              Translated product and design requirements into production-ready
+              solutions, balancing usability, consistency, and technical
+              feasibility.
             </li>
           </ul>
         </article>
 
         <article class="role">
           <div class="job">
-            <span class="job-title"
-              >Frontend Engineer – Senior Associate | Pfizer Digital</span
-            >
+            <span class="job-title">Frontend Engineer – Senior Associate</span>
             <span class="job-date">April 2022 – February 2023</span>
           </div>
+
           <p class="stack">
-            <strong>Tech Stack:</strong> TypeScript, StencilJS, Jest, Storybook,
-            Elasticsearch
+            <strong>Tech Stack:</strong>
+            TypeScript, StencilJS, Jest, Storybook, Elasticsearch
           </p>
+
           <ul>
             <li>
-              Built frontend features for the PfizerPro webinar platform used in
-              70+ global markets.
+              Developed frontend features for the PfizerPro webinar platform,
+              supporting deployment across 70+ global markets.
             </li>
             <li>Created reusable, accessible UI components in StencilJS.</li>
-            <li>Maintained strong unit test coverage with Jest and Storybook.</li>
+            <li>
+              Maintained strong unit test coverage with Jest and Storybook.
+            </li>
             <li>Improved delivery speed through Agile practices and CI/CD.</li>
           </ul>
         </article>
 
         <article class="role">
           <div class="job">
-            <span class="job-title"
-              >Frontend Engineer – Associate | Pfizer Digital</span
-            >
+            <span class="job-title">Frontend Engineer – Associate</span>
             <span class="job-date">June 2020 – March 2022</span>
           </div>
+
           <p class="stack">
-            <strong>Tech Stack:</strong> TypeScript, StencilJS, Jest, Storybook,
-            Elasticsearch
+            <strong>Tech Stack:</strong>
+            TypeScript, StencilJS, Jest, Storybook, Elasticsearch
           </p>
+
           <ul>
             <li>
               Built modular frontend features with TypeScript and StencilJS.
@@ -392,45 +512,51 @@
             <li>Refactored older code and kept documentation up to date.</li>
           </ul>
         </article>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Diploma Thesis</h2>
+
         <p>
-          <strong>Project:</strong> Built an information system for EKAB
-          (National Emergency Help Center), with a web portal and mobile apps.
+          <strong>Project:</strong>
+          Built an information system for EKAB (National Emergency Help Center),
+          with a web portal and mobile apps.
         </p>
+
         <ul>
           <li>
             Enabled incident reporting and volunteer and defibrillator
-            management
+            management.
           </li>
-          <li>Added real-time alerts and cardiac-arrest navigation</li>
-          <li>Built a secure backend API with JWT authentication</li>
+          <li>Added real-time alerts and cardiac-arrest navigation.</li>
+          <li>Built a secure backend API with JWT authentication.</li>
         </ul>
-        <p><strong>Stack:</strong> React, React Native, Redux, JWT, PHP</p>
-        <p>
-          <strong>Title:</strong> Management System of Defibrillators in
-          Emergency Incidents
-        </p>
-      </div>
 
-      <div class="section">
+        <p><strong>Stack:</strong> React, React Native, Redux, JWT, PHP</p>
+
+        <p>
+          <strong>Title:</strong>
+          Management System of Defibrillators in Emergency Incidents
+        </p>
+      </section>
+
+      <section class="section">
         <h2>Education &amp; Certifications</h2>
+
         <ul>
           <li>
             Electrical &amp; Computer Engineering, University of Western
             Macedonia
           </li>
-
           <li>C2 Proficiency in English, Michigan State University</li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <button id="download-btn" type="button" title="Print or save as PDF">
       Print / Save PDF
     </button>
+
     <script>
       document
         .getElementById("download-btn")
